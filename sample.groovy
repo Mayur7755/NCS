@@ -1,6 +1,36 @@
 pipeline {
     agent any
     stages {
+        
+        stage('Configure'){
+			    steps{
+                    
+                    echo "configure successfull"
+			        
+			    }
+			        
+				
+			
+			}
+			stage('Find-Merge-Requests'){
+			    steps{
+                    
+                    echo "merge request found"
+			        
+			    }
+			
+				
+			}
+			stage('SourceCode checkout'){
+			    steps{
+			        
+                    
+                    echo "sourceCOde check out successfull"
+			    }
+			
+			
+			}
+        
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
