@@ -11,5 +11,16 @@ pipeline {
                 sh "./jenkins/script/scripted_pipeline_ex_2.sh"
             }
         }
+         stage('Code-Analysis') {
+            steps {
+                echo "Hello World"
+            }
+        }
+        stage('Quality_gate') {
+            steps {
+                echo "quality gate is successful"
+            }
+        }
+        
     }
 }
