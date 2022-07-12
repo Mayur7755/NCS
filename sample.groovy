@@ -1,4 +1,4 @@
-def call(config){
+
 pipeline {
     agent any
     stages {
@@ -99,4 +99,4 @@ pipeline {
         
     }
 }
-}
+
