@@ -60,12 +60,7 @@ pipeline {
             steps {
                 echo "quality gate is successful"
 		    
-		    script
-            {
-                def version = sh script: 'mvn help:evaluate -Dexpression=project.version -q -DforceStdout', returnStdout: true
-                def artifactId = sh script: 'mvn help:evaluate -Dexpression=project.artifactId -q -DforceStdout', returnStdout: true
-                
-            }
+		
             }
         }
 	 stage('Upload Artifact to Nexus'){
