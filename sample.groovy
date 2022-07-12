@@ -1,5 +1,5 @@
-def call(config){
-library 'reference-pipeline'
+
+
 pipeline {
     agent any
     stages {
@@ -102,4 +102,4 @@ pipeline {
         
     }
 }
-}
+
